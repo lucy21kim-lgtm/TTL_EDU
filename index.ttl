@@ -1,0 +1,53 @@
+@prefix ex: <http://example.org/edu/> .
+@prefix schema: <https://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### 📝 [국어] 우리들의 말과 글
+ex:KOR_2_01 a ex:AchievementStandard ;
+    rdfs:label "📖 [2국02-01] 글자, 단어, 문장 읽기" ;
+    ex:description "글자, 단어, 문장을 소리 내어 읽으며 읽기의 즐거움을 느껴요!" ;
+    ex:targetGrade "초등 1~2학년" ;
+    ex:matchedResource ex:Resource_KOR_EBS_Hangul .
+
+ex:Resource_KOR_EBS_Hangul a schema:LearningResource ;
+    schema:name "🎮 EBS 한글 용사 아이야" ;
+    schema:description "재미있는 캐릭터와 함께 한글 글자와 단어를 배우는 기초 문해력 프로그램" ;
+    schema:url <https://home.ebs.co.kr/hangul/main> ;
+    schema:learningResourceType "Educational Game/Video" ;
+    ex:funFactor "⭐⭐⭐⭐⭐" .
+
+### 🌍 [사회] 우리가 사는 세상
+ex:SOC_4_01 a ex:AchievementStandard ;
+    rdfs:label "📍 [4사01-01] 우리 지역의 위치와 모습" ;
+    ex:description "지도를 보며 우리가 사는 고장의 위치와 멋진 장소들을 찾아봐요!" ;
+    ex:targetGrade "초등 3~4학년" ;
+    ex:matchedResource ex:Resource_SOC_NGII_Child .
+
+ex:Resource_SOC_NGII_Child a schema:LearningResource ;
+    schema:name "🗺️ 국토지리정보원 어린이 지도 여행" ;
+    schema:description "어린이 눈높이에 맞춘 지도 학습 및 우리 국토 탐험 서비스 (지도 놀이, 영상 등)" ;
+    schema:url <https://www.ngii.go.kr/child/main.do> ;
+    schema:learningResourceType "Interactive Map Service" ;
+    ex:funFactor "⭐⭐⭐⭐" .
+
+### 🔢 [수학] 척척박사 숫자 나라
+ex:MATH_6_01 a ex:AchievementStandard ;
+    rdfs:label "🍰 [6수01-04] 분수의 나눗셈" ;
+    ex:description "피자를 똑같이 나누는 것처럼 분수의 나눗셈 원리를 재미있게 배워요!" ;
+    ex:targetGrade "초등 5~6학년" ;
+    ex:matchedResource ex:Resource_MATH_EBSMath .
+
+ex:Resource_MATH_EBSMath a schema:LearningResource ;
+    schema:name "📺 EBSMath - 분수의 나눗셈 (6학년 2학기)" ;
+    schema:description "애니메이션과 게임으로 배우는 분수의 나눗셈 원리 (몫이 커지는 이유 등)" ;
+    schema:url <https://www.ebsmath.co.kr/resource/rscView?grdId=ch06&rscId=20202&gnrId=87201> ;
+    schema:learningResourceType "Video/Interactive" ;
+    ex:funFactor "⭐⭐⭐⭐⭐" .
+
+### 🎨 디자인 스타일 가이드 (어린이용)
+ex:StyleGuide a ex:DesignConfig ;
+    ex:primaryColor "#FFEB3B" ; # 밝은 노란색 (활기참)
+    ex:secondaryColor "#4CAF50" ; # 초록색 (성장)
+    ex:font "NanumGothicCoding" ;
+    ex:iconSet "Emoji-Based" .
