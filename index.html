@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 초등 성취기준 탐험대 🌟</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-yellow: #FFEB3B;
+            --soft-green: #C8E6C9;
+            --accent-orange: #FF9800;
+        }
+
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #FFFDE7;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background: var(--primary-yellow);
+            border-radius: 30px;
+            box-shadow: 0 8px 0 #FBC02D;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-family: 'Gaegu', cursive;
+            font-size: 3rem;
+            margin: 0;
+            color: #5D4037;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 25px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 10px 0 #E0E0E0;
+            transition: transform 0.2s;
+            border: 3px solid #eee;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .subject-tag {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tag-kor { background: #FFCDD2; } /* 국어 */
+        .tag-soc { background: #BBDEFB; } /* 사회 */
+        .tag-math { background: #C8E6C9; } /* 수학 */
+
+        .icon { font-size: 50px; margin: 15px 0; }
+        
+        h3 { font-size: 1.2rem; color: #2c3e50; margin: 10px 0; }
+        
+        p { font-size: 0.95rem; line-height: 1.5; color: #666; }
+
+        .learn-btn {
+            display: block;
+            background: var(--accent-orange);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .learn-btn:hover { background: #F57C00; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🚀 성취기준 보물탐험</h1>
+    <p>우리 학년에서 배우는 핵심 내용을 찾아보세요!</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <span class="subject-tag tag-kor">📝 국어</span>
+        <div class="icon">📖</div>
+        <h3>[2국02-01]<br>글자 탐험대</h3>
+        <p>글자와 단어를 소리 내어 읽으며 읽기의 즐거움을 느껴보는 시간이에요!</p>
+        <a href="https://www.ebs.co.kr/kids/index" class="learn-btn" target="_blank">게임하며 배우기</a>
+    </div>
+
+    <div class="card">
+        <span class="subject-tag tag-soc">🌍 사회</span>
+        <div class="icon">📍</div>
+        <h3>[4사01-01]<br>우리 동네 지도</h3>
+        <p>우리가 사는 고장의 위치와 모습을 지도로 찾아보며 우리 동네를 알아가요.</p>
+        <a href="https://map.kakao.com" class="learn-btn" target="_blank">지도로 찾아보기</a>
+    </div>
+
+    <div class="card">
+        <span class="subject-tag tag-math">🔢 수학</span>
+        <div class="icon">🍰</div>
+        <h3>[6수01-04]<br>분수 박사님</h3>
+        <p>피자를 똑같이 나누듯 분수의 나눗셈 원리를 아주 쉽게 이해해 봐요!</p>
+        <a href="https://ko.khanacademy.org/" class="learn-btn" target="_blank">영상 보러가기</a>
+    </div>
+</div>
+
+</body>
+</html>
